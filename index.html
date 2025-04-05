@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Kiểm Tra Trực Tuyến</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bài Kiểm Tra Kiến Thức</h1>
+            <div class="timer">Thời gian còn lại: <span id="time">10:00</span></div>
+        </header>
+
+        <div class="quiz-container">
+            <div id="question-container" class="hide">
+                <div id="question">Câu hỏi</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Các nút đáp án sẽ được thêm bằng JavaScript -->
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Bắt Đầu</button>
+                <button id="next-btn" class="next-btn btn hide">Tiếp Theo</button>
+                <button id="submit-btn" class="submit-btn btn hide">Nộp Bài</button>
+            </div>
+        </div>
+
+        <div id="results" class="hide">
+            <h2>Kết Quả</h2>
+            <p id="score-text">Bạn đã đúng <span id="correct">0</span>/<span id="total">0</span> câu</p>
+            <p id="percentage">Tỉ lệ đúng: 0%</p>
+            <button id="restart-btn" class="restart-btn btn">Làm Lại</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
